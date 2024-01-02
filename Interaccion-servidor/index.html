@@ -1,0 +1,46 @@
+<!-- Este documento servira para que por medio de un boton se pueda insetar
+o modificar algun elemento que se encuentre dentro de nuestro documento HTML-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servidor javascript</title>
+</head>
+<body>
+    <!-- Este sera el elemento que se modificara, cabe recalcar que el elemento
+    que se desea modificar sera el elemento que contenga la propiedad id ya que
+    si este contiene la propiedad class no nos funcionara-->
+    <h1>Inicio en Javascript</h1>
+    <p id="inline">Texto con el metodo inline</p>
+    <p id="insert"></p>
+    <p id="archivo"></p>
+
+    <!--------------------------- METODO INLINE ---------------------------------->
+    <!-- Metodo inline esto quiere decir que el codigo JS se esta ejecutando dentro
+    del archivo HTML -->
+    <!-- Para que el metodo inline funcione dentro del documento HTML es necesario
+    dos propiedades, el onclick que hace referencia al llamado a la accion que se 
+    realiza al tocar un boton y el innerHTML que hace referencia a lo que se desea
+    que se muestre cuando se presione dicho boton que llama la accion  -->
+    <button onclick="document.getElementById('inline'). innerHTML = 'Este es el titulo cambiado con JS'">Enviar</button>
+    <!----------------------------------------------------------------------------->
+
+    <!--------------------------- METODO SCRIPT 1 --------------------------------->
+    <!-- Metodo script tiene dos funcionalidades, esta el metodo script que funciona
+    para guardar bloques de codigo javascript que es lo que se ve en este caso pero
+    no es lo mas recoendable a la hora de trabajar con este lenguaje ya que no se ve
+    un codigo limpio y legitimo -->
+    <script>document.getElementById('insert').innerHTML = "Este texto se creo con el script de Javascript"</script>
+    <!------------------------------------------------------------------------------>
+
+    <!--------------------------- METODO SCRIPT 2 ---------------------------------->
+    <!-- El metodo script 2 es importando un archivo de javascript con el acronimo js
+    que es el que debe de contener todo el codigo que se necesita ejecutar en el 
+    archivo que lo este llamando. se importa asignandole a la etiqueta script el metodo
+    src -->
+    <script src="index.js"></script>
+    <!------------------------------------------------------------------------------->
+
+</body>
+</html>

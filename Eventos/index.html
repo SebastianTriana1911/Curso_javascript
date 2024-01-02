@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Eventos</h1>
+    <!------------------------- ONCLICK --------------------------->
+    <!-- Onclick hace que a la hora de clickear un elemento (EL que 
+    contenga el llamado del metodo) javascript escuche que nosotros
+    clickeamos dicho elemento y nos ejecute el metodo correspondiente
+    a dicha accion -->
+    <strong>Onclick: </strong>
+    <p id="onclick"></p>
+    <button onclick="mostrar()">Boton</button>
+    <!------------------------------------------------------------->
+    <br><br><br>
+    <!----------------------- ONMOUSEOVER ------------------------->
+    <!-- Onmouseover nos ayudara que a que javascript escuche cuando 
+    nosotros nos posicionemos en el elemento que contiene el metodo
+    js, esto nos ayudara para que a la hora de que estemos sobre
+    dicho elemento nos despliegue algun texto -->
+    <strong>Onmouseover: </strong>
+    <p id="onmouse"></p>
+    <button onmouseover="mostrar2()">Boton</button> 
+    <!------------------------------------------------------------->
+    <br><br><br>
+    <!----------------------- ONMOUSEOUT -------------------------->
+    <!-- Onmouseout a diferencia de onmouseover este ejecutara el metodo
+    js cuando dejemos de estar sobre el elemento que contiene dicho
+    metodo. En este caso el boton es el que contiene el metodo si
+    nosotros nos alejamos al punto de ya no estar sobre dicho boton
+    se desplegara un texto -->
+    <strong>Onmouseout: </strong>
+    <p id="onmouseont"></p>
+    <button onmouseout="mostrar3()">Boton</button> 
+    <!------------------------------------------------------------->
+    <br><br><br>
+    <!----------------------- ONKEYDOWN --------------------------->
+    <!-- Onkeydown es un metodo que nos ayudara a que a la hora de precionar
+    alguna tecla del teclado javascript detecte esto y proceda a 
+    ejecutar la accion que nosotros deseamos ejecutar, en este caso
+    como es un boton deberemos de clickearlo primero para que js 
+    detecte que estamos llamando al boton y asi proceder a precionar
+    alguna tecla del teclado -->
+    <strong>Onkeydown: </strong>
+    <p id="onkeydown"></p>
+    <button onkeydown="mostrar4()">Boton</button> 
+    <!------------------------------------------------------------->
+    <br><br><br>
+    <!-------------------------- ONCHANGE ------------------------->
+    <!-- Onchange escucha el cambio de un elemento a otro esto
+    quiere decir que cuando tenemos una etiqueta select y cambiamos
+    las opciones js escucha el cambio y segun esto podriamos mostrar
+    lo que quisieramos por cada cambio que pueda escuchar javascript -->
+    <strong>Onchange: </strong>
+    <p id="onchange"></p>
+    <select onchange="mostrar5()">
+        <option value="HTML">HTML</option>
+        <option value="CSS">CSS</option>
+        <option value="JAVASCRIPT">JAVASCRIPT</option>
+    </select>
+    <!------------------------------------------------------------->
+    
+    <script src="eventos.js"></script>
+</body>
+</html>
